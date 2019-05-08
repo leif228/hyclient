@@ -1,0 +1,151 @@
+<!-- 干散货列表元素-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="16px"
+    android:paddingRight="16px"
+    android:paddingTop="15dp" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+		<!-- 文字 -->
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_weight="1"
+	        android:descendantFocusability="blocksDescendants"
+	        android:orientation="vertical" >
+	        <!-- 文字行一 -->
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:layout_weight="1"
+		        android:orientation="horizontal" >
+		        <TextView
+		            android:id="@+id/orderId"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:visibility="gone"
+		            />
+	            <TextView
+	                android:id="@+id/goodsCate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:textColor="#464646"
+	                android:textSize="14dp"
+	                />
+	            <TextView
+	                android:id="@+id/goodsNum"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:textColor="#464646"
+	                android:textSize="14dp" 
+	                />
+
+		    </LinearLayout>
+		    <!-- 文字行一结束 -->
+	        <!-- 文字行二 -->
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_weight="1"
+		        android:orientation="horizontal" >
+		        <TextView
+		            android:id="@+id/goodsName"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+	                android:textColor="#464646"
+	                android:layout_weight="1"
+	                android:textSize="14dp"
+		            android:text="代理人：王五"
+		            />
+		        <TextView
+		            android:id="@+id/goodsWeight"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+	                android:textColor="#464646"
+		            android:textSize="14dp" />
+		    </LinearLayout>
+		    <!-- 文字行二结束 -->
+
+	        <!-- 文字行四 -->
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_weight="1"
+		        android:orientation="horizontal" >
+	            <TextView
+	                android:id="@+id/traidCate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:textColor="#464646"
+	                android:textSize="14dp" 
+	                android:text="托运人：张三"
+	                />
+	            <TextView
+	                android:id="@+id/goodsContainer"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:textColor="#464646"
+	                android:textSize="14dp" 
+	                android:text="承运人：李四"
+	                />
+		    </LinearLayout>
+		    <!-- 文字行四结束 -->
+	        <!-- 状态及操作按钮 -->
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_weight="1"
+		        android:orientation="horizontal" >
+
+		        <Button
+		            android:id="@+id/btnEdit"
+		            android:layout_width="60dp"
+		            android:layout_height="25dp"
+		            android:layout_marginRight="5dp"
+		            android:background="@drawable/eyd_btn_style_positive"
+		            android:textSize="14dp"
+		            android:textColor="#ffffff"
+		            android:visibility="gone"
+		            android:text="编辑" />
+		    </LinearLayout>
+		    <!-- 文字行二结束 -->
+    	</LinearLayout>
+    	<!-- 文字结束 -->
+    </LinearLayout>
+    <!-- 右部图标 -->
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/btnDel"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:focusable="false"
+            android:src="@drawable/home_collect_" />
+    </LinearLayout>
+	<!-- 右部结束 -->
+</LinearLayout>

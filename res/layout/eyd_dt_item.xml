@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="港口:到港，广州码头"
+            android:textColor="#000" />
+    </LinearLayout>
+      
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="到港时间:2015-8-4"
+            android:textColor="#000" />
+        
+  </LinearLayout>
+  
+    <LinearLayout
+        android:id="@+id/ltp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+            android:id="@+id/down"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/eyd_btn_style_positive"
+            android:text="卸货"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+            
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/downCargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卸货内容"
+            android:textColor="#000" />
+           </LinearLayout>
+    </LinearLayout>
+
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+    <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离港时间:2015-8-6"
+            android:layout_weight="1"
+            android:textColor="#000" />
+    </LinearLayout>
+   
+    
+    <LinearLayout
+        android:id="@+id/ltp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+            android:id="@+id/up"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/eyd_btn_style_positive"
+            android:text="装货"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+            
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dt_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="装货内容"
+            android:textColor="#000" />
+           </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下一港口:黄埔港"
+            android:textColor="#000" /> 
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ship_dt_bz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="备注:范德萨范德萨"
+            android:textColor="#000" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        
+
+        <Button
+            android:id="@+id/dt_edit"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/eyd_btn_style_positive"
+            android:text="编辑"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/dt_delete"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/eyd_btn_style_calm"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

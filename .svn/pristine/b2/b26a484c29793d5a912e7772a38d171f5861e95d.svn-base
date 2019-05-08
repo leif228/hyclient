@@ -1,0 +1,344 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bgColor"
+        android:orientation="vertical" >
+
+        <include layout="@layout/normal_top" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp" >
+
+                <ImageView
+                    android:id="@+id/user_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/login_login" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:text="用户名" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@null"
+                    android:text="考生"
+                    android:textColor="@color/text_but" />
+
+                <ImageView style="@style/info_img" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c8c8c8" />
+
+            <RelativeLayout
+                android:id="@+id/chang_user"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/eyd_chat_mm_listitem"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_nike"
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="切换账号"
+                    android:textColor="#464646"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/home_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/updateqa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:text="取回密码问题设置" />
+
+                <ImageView style="@style/info_img" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/modify_pw"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/eyd_chat_mm_listitem"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="修改密码"
+                    android:textColor="#464646"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/home_arrow" />
+            </RelativeLayout>
+
+            <!--
+                 <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="25dp"
+                android:background="#c8c8c8" />
+            -->
+
+            <RelativeLayout
+                android:id="@+id/scship"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/eyd_chat_mm_listitem"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="收藏船舶"
+                    android:textColor="#464646"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/home_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hc"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/eyd_chat_mm_listitem"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="驳船分组"
+                    android:textColor="#464646"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/home_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pushSet"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/eyd_chat_mm_listitem"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="消息通知"
+                    android:textColor="#464646"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/version"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/eyd_chat_mm_listitem"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="版本信息"
+                    android:textColor="#464646"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/help"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/eyd_chat_mm_listitem"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="关于帮助"
+                    android:textColor="#464646"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clear"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/eyd_chat_mm_listitem"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="清空缓存"
+                    android:textColor="#464646"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+            <!--
+                 <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="25dp"
+                android:background="#c8c8c8" />
+            -->
+
+            <RelativeLayout
+                android:id="@+id/user_logout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/eyd_chat_mm_listitem"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="退出登录"
+                    android:textColor="#464646"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <!--
+                 <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="25dp"
+                android:background="#c8c8c8" 
+                android:visibility="gone"/>
+            -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#fff"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="在线状态"
+                    android:textColor="#464646"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/online_states"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@null"
+                    android:textColor="#c8c8c8"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c8c8c8" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E44647"
+            android:text="退出登录"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

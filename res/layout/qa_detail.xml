@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/normal_top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bgColor" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+             
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bgColor"    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="问题："
+                        android:textColor="#9B9B9B"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/qa_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5D5D5D"
+                        android:minLines="2"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="院校："
+                        android:textColor="#9B9B9B"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/school_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5D5D5D"
+                        android:minLines="2"
+                        android:textSize="18dp" />
+                </LinearLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px" 
+            android:background="#c8c8c8" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                       android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="描述："
+                        android:textColor="#9B9B9B"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/qa_dis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minLines="3"
+                        android:textColor="#5D5D5D"
+                        android:textSize="18dp" />
+                </LinearLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px" 
+            android:background="#c8c8c8" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                  
+                   android:gravity="center_vertical"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="回答："
+                        android:textColor="#9B9B9B"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/qa_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                           android:minLines="3"
+                        android:textColor="#5D5D5D"
+                        android:textSize="18dp" />
+                </LinearLayout>
+                    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px" 
+            android:background="#c8c8c8" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/qa_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="kkkk"
+                android:textColor="@color/text_but"
+                android:textSize="17dp" />
+                <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px" 
+            android:background="#c8c8c8" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

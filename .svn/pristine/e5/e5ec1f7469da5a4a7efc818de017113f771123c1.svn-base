@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout android:id="@+id/relativeLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_centerInParent="true"
+            android:background="#DEDEDE" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/fxbk_item_button"
+            android:text="第一关"     android:focusable="false"
+            android:id="@+id/title_id"    
+            android:textColor="#424242"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content"  android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:text="ssss"
+            android:id="@+id/title"
+            android:layout_weight="1" 
+               android:textColor="#9A9A9A"
+            android:textSize="16dp" />
+        
+        <com.eyunda.part1.view.SwitchStudyLay
+            android:id="@+id/myswitch" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

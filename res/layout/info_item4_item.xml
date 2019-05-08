@@ -1,0 +1,277 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myattr="http://schemas.android.com/apk/res/com.eyunda.main"
+    android:id="@+id/head1"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgColor" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/tdxss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="投档线搜索 "
+                android:textColor="@color/blue"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#c8c8c8" />
+
+            <Button
+                android:id="@+id/zhss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="综合搜索 "
+                android:textColor="#464646"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/info4_text"
+                android:layout_weight="1"
+                android:text="模糊查询" />
+
+            <Button
+                android:id="@+id/search_but1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_item4_serch_search_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"  android:id="@+id/layout1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    style="@style/info4_text"
+                    android:layout_weight="1"
+                    android:text="投档线搜索" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/nf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/info_item4_serch_normal_but"
+                    android:padding="5dp"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/low_scort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/info_item4_serch_text"
+                    android:hint="最低分"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/mac_scort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/info_item4_serch_text"
+                    android:hint="最高分"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/zspc1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/info_item4_serch_normal_but"
+                android:hint="选择批次"
+                android:padding="5dp"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/search_but2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#3B79C4"
+                android:padding="10dp"
+                android:text="搜索"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"  android:id="@+id/layout2" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                style="@style/info4_text"
+                android:layout_weight="1"
+                android:text="综合搜索" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/school_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/info_item4_serch_text"
+                android:gravity="center"
+                android:hint="输入学校名称查询"
+                android:padding="5dp"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/info4_text"
+            android:text="地区"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/dq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/info_item4_serch_normal_but"
+            android:hint="选择地区"
+            android:padding="5dp"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/xxlb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/info_item4_serch_normal_but"
+            android:hint="选择学校类别"
+            android:padding="5dp"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/zspc2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/info_item4_serch_normal_but"
+            android:hint="选择批次"
+            android:padding="5dp"
+            android:textSize="18dp" />
+
+        <TextView
+            style="@style/info4_text"
+            android:layout_margin="10dp"
+            android:text="招生类别" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/tszs_b1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/info_item4_serch_normal_but"
+                android:hint="类别一"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/tszs_b2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/info_item4_serch_normal_but"
+                android:hint="类别二"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/tszs_b3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/info_item4_serch_normal_but"
+                android:hint="类别三"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_but3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#3B79C4"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_margin="5dp"
+            android:background="@drawable/info_item4_serch_line" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

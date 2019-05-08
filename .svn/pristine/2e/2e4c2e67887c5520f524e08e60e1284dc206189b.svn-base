@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/normal_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar" >
+
+            <TableLayout
+                android:id="@+id/tablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                 >
+
+                <TableRow
+                    android:id="@+id/tableRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <LinearLayout 
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                        <!--  <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CheckBox" /> -->
+                    </LinearLayout>
+
+                    <LinearLayout 
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                        <!--  <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CheckBox" /> -->
+                    </LinearLayout>
+                    <LinearLayout 
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                         <!-- <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CheckBox" /> -->
+                    </LinearLayout>
+                    
+                </TableRow>
+
+               
+            </TableLayout>
+
+        </RelativeLayout>
+
+        <!-- <RelativeLayout
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/basic"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/select_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/btn_light_blue"
+                    android:text="个性签名：" />
+
+                <ImageView
+                    android:id="@+id/name_img"
+                    android:layout_width="135dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/info_item4_serch_normal_but"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear2"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/select_seal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/btn_light_blue"
+                    android:text="选择图章：" />
+
+                <ImageView
+                    android:id="@+id/seal_img"
+                    android:layout_width="135dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/info_item4_serch_normal_but"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/select_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/btn_light_blue"
+                    android:text="选择头像：" />
+
+                <ImageView
+                    android:id="@+id/head_img"
+                    android:layout_width="135dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/info_item4_serch_normal_but"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </RelativeLayout> -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/basic"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/basic_submit"
+                android:layout_width="70dip"
+                android:layout_height="35dip"
+                android:background="@drawable/eyd_user_login_button_back"
+                android:text="确定"
+                android:textColor="@android:color/white" />
+
+           <!--  <Button
+                android:id="@+id/basic_back"
+                android:layout_width="70dip"
+                android:layout_height="35dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/basic_submit"
+                android:background="@drawable/eyd_user_login_button_back"
+                android:text="返回"
+                android:textColor="@android:color/white" /> -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

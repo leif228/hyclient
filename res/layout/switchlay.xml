@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/switch_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="4dp"  >
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:text="关闭"
+        
+        android:textColor="#5d5d5d" />
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/switch_checked"
+        android:text="开启"    
+        android:textColor="#fff" />
+
+</LinearLayout>

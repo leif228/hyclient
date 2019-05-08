@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bgColor"
+        android:orientation="vertical" >
+
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"  android:gravity="center_vertical"
+    android:background="#4D7DD2" >
+
+    <Button
+        android:id="@+id/top_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+       
+        android:layout_margin="10dp"
+        android:background="#4D7DD2"  
+        android:drawableLeft="@drawable/base_back"
+       android:textSize="18dp"
+       
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:text="注册"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="22dp" />
+
+
+    <Button
+         
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+          android:textColor="#fff"
+           android:id="@+id/top_commit" android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:minWidth="24dp"
+        android:background="@null"
+        />
+
+</LinearLayout>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/base_edittext"
+            android:hint="*手机号"
+            android:id="@+id/phonenum"
+            android:padding="3dp"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                android:background="@drawable/base_edittext"
+                android:hint="*验证码"
+                android:padding="3dp" android:id="@+id/verification"
+                android:password="true"  android:layout_marginRight="20dp"
+                android:textSize="18dp"  android:layout_weight="1"/>
+            
+            <Button    android:layout_width="fill_parent"    android:background="#ffF7F7F7"
+            android:textColor="@color/text_but" android:textSize="10dp"  android:layout_weight="3"
+              android:layout_margin="3dp"
+              android:id="@+id/getvar_but"
+                android:layout_height="fill_parent" android:text="获取验证码"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                style="@style/MyCheckBox" 
+                android:id="@+id/checkbox" 
+                android:text="我已阅读并已同意" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="#00ffffff"
+                android:text="使用条款"
+                   android:id="@+id/sytk"
+                android:textColor="@color/text_but"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="和"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                android:text="隐私策略"
+                android:id="@+id/yscl"
+                android:textColor="@color/text_but"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="#4D7DD2"
+            android:padding="10dp"
+            android:text="确定"
+            android:id="@+id/submit"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

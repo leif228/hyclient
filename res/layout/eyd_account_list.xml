@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <include
+        layout="@layout/commen_ship_top" />
+    
+ 
+   <ListView
+            android:id="@+id/myship_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#ffaeb1b4"
+            android:dividerHeight="1px"
+            android:fastScrollEnabled="true"
+            android:padding="5dip"
+            android:paddingLeft="1dip"
+            android:paddingRight="1dip" />
+</LinearLayout>

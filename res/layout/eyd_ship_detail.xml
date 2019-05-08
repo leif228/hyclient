@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/ship_detail_top" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:background="#fff" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/describe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="#4ebcd3"
+                android:paddingBottom="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="1dp"
+                android:text="船舶描述:"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/describe"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/ship_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:lineSpacingMultiplier="1.3"
+                    android:text="散货船是散装货船简称，是专门用来运输不加包扎的货物，如煤炭、矿石、木材、牲畜、谷物等。散装运输谷物、煤、矿砂、盐、水泥等大宗干散货物的船舶，都可以称为干散货船，或简称散货船。"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ff555555"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout1"
+                android:background="#4ebcd3"
+                android:paddingBottom="1.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="1.0dip"
+                android:text="船舶属性:"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextView01"
+                android:shrinkColumns="2,2"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_column="0"
+                        android:text="区域："
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="内河"
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="用途："
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="散货集装箱"
+                        android:textColor="#ff555555" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:text="总吨："
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1200"
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="净吨："
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textColor="#ff555555" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:text="载箱量："
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="载重量："
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="#ff555555" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:text="船身长："
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="49.5"
+                        android:textColor="#ff555555" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tableLayout1"
+                android:background="#4ebcd3"
+                android:paddingBottom="1.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="1.0dip"
+                android:text="动态报价:"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <TableLayout
+                android:id="@+id/TableLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextView05"
+                android:background="#dedcd2"
+                android:shrinkColumns="1,2"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:id="@+id/TableRow02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/TextView06"
+                        android:text="起"
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/TextView07"
+                        android:text="止"
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/TextView08"
+                        android:text="价格"
+                        android:textColor="#ff555555" />
+
+                    <TextView
+                        android:id="@+id/TextView09"
+                        android:text="时间"
+                        android:textColor="#ff555555" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow04"
+                    android:layout_margin="0.5dip"
+                    android:background="@color/bgColor" >
+
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:text="上海"
+                        android:textColor="#ff555555"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:text="香港"
+                        android:textColor="#ff555555"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:text="25元/天"
+                        android:textColor="#ff555555"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:text="14天"
+                        android:textColor="#ff555555"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_margin="0.5dip"
+                    android:background="@color/bgColor">
+
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:text="广州"
+                        android:textColor="#ff555555"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:text="香港"
+                        android:textColor="#ff555555"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:text="30元/天"
+                        android:textColor="#ff555555"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_margin="1dip"
+                        android:text="7天"
+                        android:textColor="#ff555555"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/TextView10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TableLayout2"
+                android:background="#4ebcd3"
+                android:paddingBottom="1.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="1.0dip"
+                android:text="船舶详情:"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+ <LinearLayout
+                android:id="@+id/linearlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/TextView10"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <WebView
+                    android:id="@+id/my_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+</LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_pinglun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearlayout3"
+                    android:background="#4ebcd3" >
+
+                    <TextView
+                        android:id="@+id/detail_pinglun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="1.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="1.0dip"
+                        android:text="评论"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+                <ListView 
+                    android:id="@+id/list_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#ffaeb1b4"
+            android:dividerHeight="2dp"
+            android:fastScrollEnabled="true"
+            android:padding="5dip"
+            android:paddingLeft="1dip"
+            android:paddingRight="1dip"
+            
+                    android:layout_below="@+id/layout_pinglun"/>
+            
+            
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

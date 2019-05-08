@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogAddArea"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<TextView 
+	    android:id="@+id/dialogNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="请输入港口名称!"  
+            android:visibility="invisible" 
+            android:background="#ff0000"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+	/>
+    <LinearLayout
+        android:id="@+id/dialogname"
+        android:layout_below="@+id/dialogNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/areaCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="200dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="—" />
+        <EditText
+            android:id="@+id/areaCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="200dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="pa_x_fragment_default" type="layout">r/dir/pa_fragment_default.xml</item>
+    <item name="pa_x_fragment_forgetpsw" type="layout">r/dir/pa_fragment_forgetpsw.xml</item>
+    <item name="pa_x_fragment_modifypsw" type="layout">r/dir/pa_fragment_modifypsw.xml</item>
+    <item name="pa_x_fragment_setpsw" type="layout">r/dir/pa_fragment_setpsw.xml</item>
+
+</resources>

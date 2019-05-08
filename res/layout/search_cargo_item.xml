@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/search_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="起"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/et_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="起始日期"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/info_item4_serch_normal_but"
+        android:textColor="#000" />
+
+
+    <TextView
+        android:id="@+id/search_tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="止"
+     
+        android:layout_marginLeft="10dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/et_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+        android:background="@drawable/info_item4_serch_normal_but"
+        android:hint="截止日期" />
+
+
+
+</LinearLayout>

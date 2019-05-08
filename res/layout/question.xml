@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/normal_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        android:background="@color/bgColor"
+        android:orientation="vertical" android:id="@+id/tool_bar" >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/base_edittext"
+             android:textSize="18dp"
+             android:id="@+id/title"
+            android:hint="请输入关键字" />
+        
+         <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:minLines="8"
+            android:gravity="top"  android:textSize="18dp"
+            android:background="@drawable/base_edittext"
+               android:id="@+id/content"
+            android:hint="请输入提问内容" />
+         
+         <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#4D7DD2"
+           
+            android:text="提交"
+            android:id="@+id/submit"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+        
+    </LinearLayout>
+
+ 
+
+</RelativeLayout>

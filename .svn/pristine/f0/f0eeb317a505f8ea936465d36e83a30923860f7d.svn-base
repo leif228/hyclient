@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp" >
+<View  android:layout_width="fill_parent"
+        android:layout_height="1px" android:background="#c8c8c8"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:id="@+id/name"
+        
+        android:text="高考资讯推送"
+        android:textColor="#464646"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/myswitch"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/plug_checked"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

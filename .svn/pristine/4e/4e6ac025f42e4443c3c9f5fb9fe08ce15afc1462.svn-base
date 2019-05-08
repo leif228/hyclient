@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+     >
+<include layout="@layout/normal_top"/>
+     
+
+ 
+      <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+         
+            android:background="#DFDFDF" />
+       <include layout="@layout/normal_top_adv" android:id="@+id/adv_lay" android:visibility="gone"/>
+      
+      <com.ygl.android.view.YFListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tool_bar"
+        android:padding="5dip"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="#ffaeb1b4"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="true"
+        android:paddingLeft="1dip" 
+           android:layout_weight="1"
+        android:paddingRight="1dip" />
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   android:background="#5b87d5"
+        android:layout_alignParentBottom="true" android:id="@+id/bottom"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#BDBEC2" />
+ <LinearLayout
+            android:layout_width="match_parent"
+       
+            android:layout_height="50dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" android:id="@+id/liner_bg1"
+                android:gravity="center" >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    
+                    
+                    android:text="绑定考生" android:id="@+id/bottom_but1"
+                    android:textColor="#fff"  android:textSize="18dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                
+                android:background="#5077EB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:background="#8C8C8C" android:visibility="gone"
+                android:layout_weight="1" android:id="@+id/liner_bg2"
+                android:gravity="center" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    
+                    android:text="支付 "  android:id="@+id/bottom_but2"
+                    android:enabled="false"
+                    android:textColor="#fff" android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp" >
+
+<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:focusableInTouchMode="false"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/boat_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/zd_icon"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/list_cargoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="石油天然气及制品"
+                android:textColor="#000"
+                android:textSize="16sp"  />
+            
+    <TextView
+                android:id="@+id/list_cargoCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="货号:213"
+                android:visibility="gone"
+                android:textColor="#000" />
+    <TextView
+                android:id="@+id/list_shipper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="货主：kkk"
+                android:gravity="right"
+                android:textColor="#000"
+                 />
+           
+            
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/list_shipper1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="货主：kkk"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="电话:"
+                android:textColor="#000" />
+
+             <TextView
+                 android:id="@+id/list_phone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="right"
+                 android:text="12345678910"
+                 android:textColor="#000" />
+            
+        </LinearLayout>
+    
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/list_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起止港：广州.珠江港--香港.九龙港"
+                android:textColor="#464646"
+                android:layout_weight="1"
+                android:textSize="14sp" />
+          
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/list_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="重量/体积：2000"
+                android:textColor="#464646"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/unit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="单价：3000元"
+                android:gravity="right"
+                android:textColor="#464646"
+                android:textSize="14sp" />
+
+          
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+               <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="总价：200000"
+                android:textColor="#464646"
+                android:textSize="13sp" />
+  <TextView
+                android:id="@+id/list_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:visibility="gone"
+                android:text="截止日：2015-2-1"
+                android:textColor="#464646"
+                android:textSize="14sp" />
+            
+
+         
+        </LinearLayout>
+      
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/normal_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/account_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shipName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/p_tv"
+                android:layout_alignBaseline="@+id/wid"
+                android:text="商品号：" />
+
+            <TextView
+                android:id="@+id/wid"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/shipName_tv"
+                android:gravity="center"
+                android:text=" " />
+            
+            <TextView
+                android:id="@+id/wName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/p_tv"
+                android:layout_below="@+id/wid"
+                android:layout_alignBaseline="@+id/wname"
+                android:text="商品名称：" />
+
+            <TextView
+                android:id="@+id/wname"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/wid"
+                android:layout_toRightOf="@+id/wName_tv"
+                android:gravity="center"
+                android:text=" " />
+            
+            <TextView
+                android:id="@+id/p_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/p_tv"
+                android:layout_below="@+id/wname"
+                android:layout_alignBaseline="@+id/price"
+                android:text="销售价格(元)：" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/wname"
+                android:layout_toRightOf="@+id/p_tv"
+                android:gravity="center"
+                android:text=" " />
+            <TextView
+                android:id="@+id/c_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/p_tv"
+                android:layout_below="@+id/price"
+                android:layout_alignBaseline="@+id/count"
+                android:text="购买数量：" />
+
+            <EditText
+                android:id="@+id/count"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/price"
+                android:layout_toRightOf="@+id/c_tv"
+                android:gravity="center"
+                android:text=" " />
+            <TextView
+                android:id="@+id/t_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/p_tv"
+                android:layout_below="@+id/count"
+                android:layout_alignBaseline="@+id/tprice"
+                android:text="交易金额(元)：" />
+
+            <EditText
+                android:id="@+id/tprice"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/count"
+                android:layout_toRightOf="@+id/t_tv"
+                android:gravity="center"
+                android:enabled="false"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/taoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/p_tv"
+                android:layout_below="@+id/tprice"
+                 android:layout_alignBaseline="@+id/spinner_account_way"
+                 android:visibility="gone"
+                android:text="选择船舶：" />
+
+            <Spinner
+                android:id="@+id/spinner_account_way"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/taoc"
+                android:layout_below="@+id/tprice"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="18sp" />
+       
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_in"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/account_submit"
+                android:layout_width="70dip"
+                android:layout_height="35dip"
+                android:background="@drawable/eyd_user_login_button_back"
+                android:text="提交"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/account_back"
+                android:layout_width="70dip"
+                android:layout_height="35dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/account_submit"
+                android:background="@drawable/eyd_user_login_button_back"
+                android:text="返回"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

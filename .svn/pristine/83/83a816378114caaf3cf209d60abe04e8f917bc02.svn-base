@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="#fff"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/more"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/border_line" />
+
+        <TextView
+            android:id="@+id/include_title"
+            style="@style/home_top_text"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="关注院校" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/home_arrow" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/qa_item1"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/qa_item1"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/qa_item1"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/border_line" />
+
+</LinearLayout>

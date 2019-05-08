@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Multiple Alternative Audio Tracks - Example</title>
+
+<link href="http://vjs.zencdn.net/5.16.0/video-js.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+	<button onclick="playVid()" type="button">播放视频</button>
+	<button onclick="pauseVid()" type="button">暂停视频</button>
+	<button onclick="getPlaySpeed()" type="button">默认的播放速度是多少？</button>
+	<button onclick="setPlaySpeed()" type="button">把视频设置为快速播放</button>
+	<button onclick="getCurTime()" type="button">获得当前时间的位置</button>
+	<button onclick="setCurTime()" type="button">把时间位置设置为 5 秒</button>
+	<button onclick="getVidDur()" type="button">获得视频的长度</button>
+	<h1>Multiple Alternative Audio Tracks</h1>
+	<p>Check the source of this page and the console for detailed
+		information on this example</p>
+	<video id="maat-player" class="video-js vjs-default-skin" controls>
+		<source
+			src="http://cdn.theoplayer.com/video/star_wars_episode_vii-the_force_awakens_official_comic-con_2015_reel_(2015)/index.m3u8"
+			type="application/x-mpegURL">
+	</video>
+	<div id="audioTrackChoice">
+		<select id="enabled-audio-track" name="enabled-audio-track">
+		</select>
+	</div>
+
+	<script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.0.2/videojs-contrib-hls.js"></script>
+
+	<script type="text/javascript">
+		var myVid = document.getElementById("maat-player");
+
+		function playVid() {
+			myVid.play();
+		}
+
+		function pauseVid() {
+			myVid.pause();
+		}
+
+		function getPlaySpeed() {
+			alert(myVid.defaultPlaybackRate);
+		}
+		function setPlaySpeed() {
+			myVid.defaultPlaybackRate = 2;
+			myVid.load();
+		}
+
+		function getCurTime() {
+			alert(myVid.currentTime);
+		}
+		function setCurTime() {
+			myVid.currentTime = 5;
+		}
+		function getVidDur() {
+			alert(myVid.duration);
+		}
+	</script>
+	<!-- If you'd like to support IE8 -->
+	<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+	<script>
+		(function(window, videojs) {
+			var player = window.player = videojs('maat-player');
+			var audioTrackList = player.audioTracks();
+			var audioTrackSelect = document
+					.getElementById("enabled-audio-track");
+			// watch for a change on the select element
+			// then change the enabled audio track
+			// only one can be enabled at a time, but video.js will
+			// handle that for us, all we need to do is enable the new
+			// track
+			audioTrackSelect.addEventListener('change', function() {
+				var track = audioTrackList[this.selectedIndex];
+				console.log('User switched to track ' + track.label);
+				track.enabled = true;
+			});
+
+			// watch for changes that will be triggered by any change
+			// to enabled on any audio track. Manually or through the
+			// select element
+			audioTrackList.on('change', function() {
+				for (var i = 0; i < audioTrackList.length; i++) {
+					var track = audioTrackList[i];
+					if (track.enabled) {
+						console.log('A new ' + track.label
+								+ ' has been enabled!');
+					}
+				}
+			});
+
+			// will be fired twice in this example
+			audioTrackList.on('addtrack', function() {
+				console.log('a track has been added to the audio track list');
+			});
+
+			// will not be fired at all unless you call
+			// audioTrackList.removeTrack(trackObj)
+			// we typically will not need to do this unless we have to load
+			// another video for some reason
+			audioTrackList
+					.on(
+							'removetrack',
+							function() {
+								console
+										.log('a track has been removed from the audio track list');
+							});
+
+			// getting all the possible audio tracks from the track list
+			// get all of thier properties
+			// add each track to the select on the page
+			// this is all filled out by HLS when it parses the m3u8
+			player.on('loadeddata', function() {
+				console.log('There are ' + audioTrackList.length
+						+ ' audio tracks');
+				for (var i = 0; i < audioTrackList.length; i++) {
+					var track = audioTrackList[i];
+					var option = document.createElement("option");
+					option.text = track.label;
+					if (track.enabled) {
+						option.selected = true;
+					}
+					audioTrackSelect.add(option, i);
+					console.log('Track ' + (i + 1));
+					[ 'label', 'enabled', 'language', 'id', 'kind' ]
+							.forEach(function(prop) {
+								console.log("  " + prop + ": " + track[prop]);
+							});
+				}
+			});
+		}(window, window.videojs));
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/normal_top" />
+
+    <RelativeLayout
+        android:id="@+id/myView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.hangyi.zd.widge.CommonVideoView
+        android:id="@+id/common_videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+    </RelativeLayout>
+
+</LinearLayout>

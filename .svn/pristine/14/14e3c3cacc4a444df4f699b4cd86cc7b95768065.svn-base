@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name8">船管易</string>
+    <string name="app_name">航易</string>
+    <string name="title_activity_main">船管易</string>
+    <string name="app_back">返回</string>
+    <string name="app_ok">确定</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_continue">继续</string>
+    <string name="app_tip">提示</string>
+    <string name="app_send">发送</string>
+    <string name="app_set">设置</string>
+    <string name="app_save">保存</string>
+    <string name="app_delete">删除</string>
+    <string name="app_nextstep">下一步</string>
+    <string name="app_prevstep">上一步</string>
+    <string name="app_finish">完成</string>
+    <string name="app_find">查找</string>
+    <string name="app_edit">编辑</string>
+    <string name="app_login">登陆</string>
+    <string name="app_login_register">登陆/注册</string>
+    <string name="app_register">注册</string>
+    <string name="app_tile">船舶详情</string>
+    <string name="eyd_chat_search_header">S</string>
+    <string name="eyd_chat_button_send">发送</string>
+    <string name="eyd_chat_attach_picture">图片</string>
+    <string name="attach_file">文件</string>
+    <string name="eyd_chat_move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="eyd_chat_text_delivered_msg">送达</string>
+    <string name="eyd_chat_text_ack_msg">已读</string>
+    <string name="eyd_chat_delete_message">删除消息</string>
+    <string name="eyd_chat_copy_message">复制消息</string>
+    <string name="eyd_chat_prompt">提示</string>
+    <string name="eyd_chat_ok">确定</string>
+    <string name="eyd_chat_cancel">取消</string>
+    <string name="open_file_failed">文件打开失败</string>
+    <string name="open_file_error_format">文件格式不正确</string>
+    <string name="open_file_none">您没有选择任何文件</string>
+    <string name="empty_hint">文件夹为空</string>
+    <string name="sdcard_unmonted_hint">请先挂载SD卡</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="delete_voice">删除语音</string>
+    <!-- applet -->
+    <string name="applet_secimg_title">填写验证码</string>
+    <string name="applet_secimg_change">换一张图片</string>
+    <string name="applet_seccode_tip">验证码不能为空</string>
+    <string name="applet_seccode_fail_tip">验证码错误，请重新输入</string>
+
+    <!-- verify -->
+    <string name="verify_password_null_tip">密码不能为空，请输入密码</string>
+    <!-- 下拉刷新，上拉加载更多 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- format -->
+    <string name="fmt_date">M月d日</string>
+    <string name="fmt_longdate">yyyy年M月d日</string>
+    <string name="fmt_datetime" formatted="false">M月d日 %skk:mm</string>
+    <string name="fmt_patime">kk:mm</string>
+    <string name="fmt_longtime" formatted="false">yyyy年M月d日 %skk:mm</string>
+    <string name="fmt_in60min" formatted="false">%d分钟前</string>
+    <string name="fmt_justnow">1分钟内</string>
+    <string name="fmt_dawn">凌晨</string>
+    <string name="fmt_morning">早上</string>
+    <string name="fmt_noon">中午</string>
+    <string name="fmt_afternoon">下午</string>
+    <string name="fmt_evening">晚上</string>
+    <string name="fmt_pre_yesterday">昨天</string>
+    <string name="fmt_iap_err" formatted="false">网络连接不可用，请稍候重试</string>
+    <string name="hello">Hello World, SDKSampleActivity!</string>
+    <string name="app_share">分享</string>
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+    <string name="send_to_wx_title">发送到微信</string>
+    <string name="get_from_wx_title">从微信接收</string>
+    <string name="show_from_wx_title">显示微信请求的消息</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <!-- WXMediaMessage -->
+    <string name="send">发送到微信</string>
+    <string name="receive">从微信接收</string>
+    <string name="is_timeline">是否分享到朋友圈</string>
+    <string name="send_text">发送文本</string>
+    <string name="send_text_default">这段文字发送自微信SDK示例程序</string>
+    <string name="send_img">发送图片</string>
+
+    <string-array name="send_img_item">
+        <item>发送图片的二进制数据</item>
+        <item>发送图片的本地路径</item>
+        <item>发送图片的URL</item>
+    </string-array>
+
+    <string name="send_img_file_not_exist">文件不存在</string>
+    <string name="send_pic">发送照片</string>
+    <string name="send_music">发送音乐</string>
+
+    <string-array name="send_music_item">
+        <item>发送音乐url</item>
+        <item>发送低带宽音乐url</item>
+    </string-array>
+
+    <string name="send_video">发送视频</string>
+
+    <string-array name="send_video_item">
+        <item>发送视频url</item>
+        <item>发送低带宽视频url</item>
+    </string-array>
+
+    <string name="send_webpage">发送网页</string>
+
+    <string-array name="send_webpage_item">
+        <item>发送网页url</item>
+    </string-array>
+
+    <string name="send_appdata">发送app消息</string>
+
+    <string-array name="send_appdata_item">
+        <item>发送app文件本地路径</item>
+        <item>发送app二进制数据</item>
+        <item>发送无附件的app</item>
+    </string-array>
+
+    <string name="send_emoji">发送表情消息</string>
+
+    <string-array name="send_emoji_item">
+        <item>发送表情本地路径</item>
+        <item>发送表情二进制数据</item>
+    </string-array>
+    <string-array name="send_emoji_item_format">
+        <item>发送GIF图片</item>
+        <item>发送非GIF图片</item>
+    </string-array>
+
+    <string name="share_text_to_weixin">回应文本到微信</string>
+    <string name="share_text_default">这段文字回应自微信SDK示例程序</string>
+    <string name="share_url_to_weixin">回应URL到微信</string>
+    <string name="share_pic_to_weixin">回应图片到微信</string>
+    <string name="share_music_to_weixin">回应音乐到微信</string>
+    <string name="share_video_to_weixin">回应视频到微信</string>
+    <string name="share_appdata_to_weixin">回应app消息到微信</string>
+    <string name="register_as_weixin_app_sender">注册微信事件发送器</string>
+    <string name="get_token_from_weixin">获取微信访问Token</string>
+    <string name="unregister_from_weixin">从微信反注册</string>
+    <string name="show_from_wx_tip">这个界面用于显示微信向第三方app请求显示的信息</string>
+    <!-- 个人菜单列表 -->
+    <string name="search_boat">搜索</string>
+    <string name="my_message">账号设置</string>
+    <string name="my_phonebook">联系人</string>
+    <string name="my_boat">账号设置</string>
+    <string name="my_boat_dt">收藏船舶</string>
+    <string name="my_boat_jk">历史回放</string>
+    <string name="my_settle">钱包</string>
+    <string name="my_order">镜头</string>
+    <string name="my_cabin">船舶上报</string>
+    <string name="my_cargo">航次管理</string>
+    <string name="ship_public">船盘发布</string>
+    <string name="app_sys_set">设置</string>
+    <string name="app_exit">退出</string>
+
+    <!-- 船舶基本信息 -->
+    <string name="ship_logo">船舶图片</string>
+    <string name="ship_operation_certificate">船舶运营证</string>
+    <string name="ship_identity_front">身份证正面</string>
+    <string name="ship_identity_back">身份证反面</string>
+    <string name="ship_proxy">委托书</string>
+	<string name="nopic">暂无图片</string>
+	<string name="downTemplateDesc">下载“委托书模板”，然后填写、签名、盖章、拍照、上传</string>
+    
+    <string name="choose_logo">图片</string>
+    <string name="ship_carrier">船东</string>
+    <string name="ship_att_type">委托类型</string>
+    <string name="ship_name">船名</string>
+    <string name="ship_area">地区</string>
+    <string name="ship_class">船类</string>
+    <string name="line">航区</string>
+    <string name="explain">船舶说明</string>
+    <!-- 报价 -->
+    <string name="deadline">期限</string>
+    <string name="start_port">起运港</string>
+    <string name="end_port">到达港</string>
+    <string name="tonnage">载货量</string>
+    <string name="rmb">元</string>
+    <string name="price">总价</string>
+    <!-- 分类属性 -->
+    <string name="ship_zone">航区</string>
+    <string name="ship_use">用途</string>
+    <string name="gross_ton">总吨</string>
+    <string name="net_ton">净吨</string>
+    <string name="trade">内外贸</string>
+    <string name="domestic_trade">内贸</string>
+    <string name="foreign_trade">外贸</string>
+    <string name="water_date">建造日期</string>
+    <string name="built_date">下水日期</string>
+    <string name="title_activity_myship">MyshipActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_price">PriceActivity</string>
+    <string name="title_activity_cargo">CargoActivity</string>
+    <string name="title_activity_ship_basic">ShipBasicActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home_cargo_cate">HomeCargoCateActivity</string>
+    <string name="title_activity_ship_dt">ShipDtActivity</string>
+    <string name="title_activity_apply_edit">ApplyEditActivity</string>
+    <string name="title_activity_cargo_preview">CargoPreviewActivity</string>
+    <string name="title_activity_simple_order">SimpleOrderActivity</string>
+
+    <string name="owner">货主</string>
+    <string name="cargo_logo">货物图片</string>
+    <string name="cargo_cate">货类</string>
+    <string name="cargo_name">货名</string>
+    <string name="cargo_guige">规格</string>
+    <string name="zero">0</string>
+    <string name="zero_float">0.0</string>
+    <string name="price_tag">价格标语</string>
+    <string name="carriage_yuan">运费(元)</string>
+    <string name="carry_per_yuan_ton">运价(元/吨)</string>
+    <string name="carry_per_yuan_box">运价(元/个)</string>
+    <string name="cargo_num_ton">货量(吨)</string>
+    <string name="cargo_num_box">箱量(个)</string>
+    <string name="box_20e">20\'E:</string>
+    <string name="box_20f">20\'F:</string>
+    <string name="box_40e">40\'E:</string>
+    <string name="box_40f">40\'F</string>
+    <string name="box_60e">45\'E:</string>
+    <string name="box_60f">45\'F:</string>
+    <string name="change_pay_type"><u>更换支付方式</u></string>
+    
+    <string name="app_picker_name">应用</string>
+  <string name="bookmark_picker_name">书签</string>
+  <string name="button_add_calendar">添加事件至日历</string>
+  <string name="button_add_contact">添加联系人</string>
+  <string name="button_back">返回</string>
+  <string name="button_book_search">打开图书搜索</string>
+  <string name="button_cancel">取消</string>
+  <string name="button_custom_product_search">自定义搜索</string>
+  <string name="button_dial">拨号</string>
+  <string name="button_done">完成</string>
+  <string name="button_email">发送email</string>
+  <string name="button_get_directions">获取地址</string>
+  <string name="button_google_shopper">谷歌购物</string>
+  <string name="button_mms">发送彩信</string>
+  <string name="button_ok">确定</string>
+  <string name="button_open_browser">打开浏览器</string>
+  <string name="button_product_search">打开产品搜索</string>
+  <string name="button_search_book_contents">搜索图书内容</string>
+  <string name="button_share_app">共享应用</string>
+  <string name="button_share_bookmark">分享书签</string>
+  <string name="button_share_by_email">通过email分享</string>
+  <string name="button_share_by_sms">通过短信分享</string>
+  <string name="button_share_clipboard">分享剪切板</string>
+  <string name="button_share_contact">分享联系人</string>
+  <string name="button_show_map">显示地图</string>
+  <string name="button_sms">发送短信</string>
+  <string name="button_web_search">网页搜索</string>
+  <string name="button_wifi">连接到网络</string>
+  <string name="contents_contact">联系人信息</string>
+  <string name="contents_email">Email地址</string>
+  <string name="contents_location">地理坐标</string>
+  <string name="contents_phone">电话号码</string>
+  <string name="contents_sms">短信地址</string>
+  <string name="contents_text">纯文本</string>
+  <string name="history_clear_one_history_text">删除</string>
+  <string name="history_clear_text">删除历史</string>
+  <string name="history_email_title">条码扫描器历史</string>
+  <string name="history_empty">空的</string>
+  <string name="history_empty_detail">没有条码扫描已记录</string>
+  <string name="history_send">发送历史</string>
+  <string name="history_title">历史</string>
+  <string name="menu_encode_mecard">使用MECARD</string>
+  <string name="menu_encode_vcard">使用vCard</string>
+  <string name="menu_help">帮助</string>
+  <string name="menu_history">历史</string>
+  <string name="menu_settings">设置</string>
+  <string name="menu_share">分享</string>
+  <string name="msg_bulk_mode_scanned">批量扫描：找到条码，已保存</string>
+  <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+  <string name="msg_default_format">格式</string>
+  <string name="msg_default_meta">元数据</string>
+  <string name="msg_default_mms_subject">Hi</string>
+  <string name="msg_default_status">请将条码置于取景框内扫描。  </string>
+  <string name="msg_default_time">时间</string>
+  <string name="msg_default_type">类型</string>
+  <string name="msg_encode_contents_failed">无法根据已有数据生成条码。   </string>
+  <string name="msg_google_books">谷歌图书</string>
+  <string name="msg_google_product">谷歌购物</string>
+  <string name="msg_google_shopper_missing">谷歌购物未安装</string>
+  <string name="msg_install_google_shopper">谷歌购物是一款将条码扫描和商品比价相结合的应用，谷歌购物不使用浏览器，您想尝试吗？</string>
+  <string name="msg_intent_failed">抱歉，无法打开所需软件。 条码内容可能无效。</string>
+  <string name="msg_redirect">重定向</string>
+  <string name="msg_sbc_book_not_searchable">抱歉，无法找到此图书。</string>
+  <string name="msg_sbc_failed">抱歉，搜索时遇到错误。</string>
+  <string name="msg_sbc_no_page_returned">无页面返回</string>
+  <string name="msg_sbc_page">页面</string>
+  <string name="msg_sbc_results">结果</string>
+  <string name="msg_sbc_searching_book">搜索图书…</string>
+  <string name="msg_sbc_snippet_unavailable">摘录不可用</string>
+  <string name="msg_sbc_unknown_page">未知页面</string>
+  <string name="msg_share_explanation">您可以通过在自己的手机上显示条码，并使用其它手机扫描此条码的方式进行分享</string>
+  <string name="msg_share_subject_line">这是我所扫描条码的内容</string>
+  <string name="msg_share_text">或键入一些文字</string>
+  <string name="msg_sure">你肯定吗？</string>
+  <string name="msg_unmount_usb">抱歉，SD卡不可访问。</string>
+  <string name="preferences_actions_title">找到条码时</string>
+  <string name="preferences_auto_focus_title">使用自动对焦</string>
+  <string name="preferences_bulk_mode_summary">连续扫描并保存多个条形码</string>
+  <string name="preferences_bulk_mode_title">批量扫描模式</string>
+  <string name="preferences_copy_to_clipboard_title">复制到剪切板</string>
+  <string name="preferences_custom_product_search_summary" formatted="false">替换：％s=内容，％f=格式，％t=类型</string>
+  <string name="preferences_custom_product_search_title">自定义搜索网址</string>
+  <string name="preferences_decode_1D_title">扫描 一维条码</string>
+  <string name="preferences_decode_Data_Matrix_title">扫描 DM码</string>
+  <string name="preferences_decode_QR_title">扫描 QR码</string>
+  <string name="preferences_device_bug_workarounds_title">设备问题解决办法</string>
+  <string name="preferences_disable_continuous_focus_summary">只使用标准对焦模式</string>
+  <string name="preferences_disable_continuous_focus_title">没有持续关注</string>
+  <string name="preferences_disable_exposure_title">无曝光</string>
+  <string name="preferences_front_light_summary">前灯可用时，打开前灯</string>
+  <string name="preferences_front_light_title">前灯</string>
+  <string name="preferences_general_title">一般设置</string>
+  <string name="preferences_name">设置</string>
+  <string name="preferences_play_beep_title">提示音</string>
+  <string name="preferences_remember_duplicates_summary">在历史记录中保存重复记录</string>
+  <string name="preferences_remember_duplicates_title">记住重复</string>
+  <string name="preferences_result_title">结果设置</string>
+  <string name="preferences_scanning_title">条码类型选择</string>
+  <string name="preferences_search_country">搜索国家</string>
+  <string name="preferences_supplemental_summary">尝试检索关于条码内容的更多信息</string>
+  <string name="preferences_supplemental_title">检索更多信息</string>
+  <string name="preferences_try_bsplus">尝试条码扫描器+</string>
+  <string name="preferences_try_bsplus_summary">增强新的功能和接口</string>
+  <string name="preferences_vibrate_title">振动</string>
+  <string name="result_address_book">找到联系人信息</string>
+  <string name="result_calendar">找到日历事件</string>
+  <string name="result_email_address">找到email地址</string>
+  <string name="result_geo">找到地理坐标</string>
+  <string name="result_isbn">找到图书</string>
+  <string name="result_product">找到产品</string>
+  <string name="result_sms">找到短信地址</string>
+  <string name="result_tel">找到电话号码</string>
+  <string name="result_text">找到纯文本</string>
+  <string name="result_uri">找到URL</string>
+  <string name="result_wifi">发现网络配置</string>
+  <string name="sbc_name">Google图书搜索</string>
+  <string name="share_name">通过条码分享</string>
+  <string name="wifi_changing_network">请求连接到网络\u2026</string>
+  <string name="wifi_ssid_label">网络SSID</string>
+  <string name="wifi_type_label">类型</string>
+  
+   <string name="login">登录</string>
+    <string name="text_btn_init">百度账号绑定</string>
+    <string name="text_btn_init1">更换百度账号</string>
+    <string name="text_btn_on_push">打开Push</string>
+    <string name="text_btn_off_push">关闭Push</string>
+    <string name="log_tip">日志：</string>
+    <string name="clear_log">清除日志</string>
+    <string name="text_btn_rich">富媒体消息</string>
+    <string name="text_btn_initAK">无账号绑定</string>
+    <string name="text_btn_setTags">设置标签</string>
+    <string name="text_btn_delTags">删除标签</string>
+    <string name="text_btn_senior">高级功能</string>
+    <string name="text_btn_set">设置</string>
+    <string name="text_media_title">富媒体消息列表</string>
+    <string name="media">Rich Media</string>
+    <string name="custom_text_hint">用户自定义行为打开的Activity</string>
+    <string name="tags_hint">请输入多个标签，以英文逗号隔开</string>
+    <string name="text_btn_aidl">轻应用AIDL</string>
+    <string name="text_btn_off_lightapp">关闭所有轻消息</string>
+    <string name="text_btn_off_app_msg">加入黑名单</string>
+    <string name="text_btn_unread_only_msg">只获取未读消息</string>
+    <string name="text_btn_on_shortcut">生成快捷图标</string>
+    <string name="text_btn_showTags">列举标签</string>
+    <string name="text_btn_unbind">解绑</string>
+    <string name="text_btn_setunDisturb">免打扰时段</string>
+    <string name="text_toast">设置成功，免打扰时段为：\n%1$s - %2$s</string>
+    <string name="text_about">百度Push Android SDK 4.6.3\n\n更新时间:2016年5月11日\nChange Log：\n修复低端机器上WebView加载时可能的安全隐患。\n修复特殊场景下Push无法后台自启动的bug。\n暂停PushKeepAlive机制，防止小米部分机器上异常情况下的焦点丢失。</string>
+    <string name="text_help">百度hi官方技术讨论群：1405944\nQQ群：324533810（可加）\n云推送微信公众账号：云推送（微信号：baidu-push）\n</string>
+    
+    <string name="api_key">%1$s</string>
+    
+    <string name="app_version_name">hyclient 2</string>
+    
+    
+  
+</resources>

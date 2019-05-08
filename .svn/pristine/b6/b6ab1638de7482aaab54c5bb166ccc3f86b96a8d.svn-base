@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cabin_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/normal_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" 
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="船舶名称"
+                    android:textColor="#000" />
+
+                <Spinner
+                    android:id="@+id/selectShip"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="1px"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="预计到达时间"
+                    android:textColor="#000" />
+
+				<TextView
+                    android:id="@+id/etaTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/info_item4_serch_normal_but"
+                    android:gravity="center"
+                    android:hint="预计到达时间"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/end_port" />
+
+                <TextView
+                    android:id="@+id/endPort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:background="@drawable/info_item4_serch_normal_but"
+                    android:gravity="center"
+                    android:hint="@string/end_port"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="接货信息"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="" />
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/pubStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/privateCabin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="私有" />
+
+                <RadioButton
+                    android:id="@+id/publicCabin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:checked="true"
+                    android:text="公开" />
+            </RadioGroup>
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="#E44647"
+                android:padding="5dp"
+                android:text="@string/app_save"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

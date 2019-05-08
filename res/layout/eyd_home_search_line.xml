@@ -1,0 +1,130 @@
+<!-- 首页搜索框视图 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gk_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/border_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:id="@+id/searchContainer"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="vertical" 
+            android:id="@+id/searchLine">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spCate"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="搜索:"
+                    android:visibility="gone"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/startPort"
+                    style="@style/home_search_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:hint="船类/船名/MMSI/船东" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="bottom"
+            android:orientation="vertical" 
+            android:layout_alignBottom="@id/searchLine"
+            >
+
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_width="36dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_bg_home" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/border_line" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/border_line" />    -->
+    <LinearLayout
+        android:id="@+id/tabBtns"
+        android:layout_width="fill_parent"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_height="1dp" >
+
+        <TextView
+            android:id="@+id/tab_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:background="@color/darkgrey" />
+
+        <TextView
+            android:id="@+id/tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/id_content"
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

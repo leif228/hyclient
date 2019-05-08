@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bgColor"
+        android:orientation="vertical" >
+
+        <include layout="@layout/normal_top"/>
+
+      
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+          
+            android:orientation="vertical" >
+
+            
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp" >
+
+                 
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                 
+                    android:src="@drawable/login_login"
+                    android:id="@+id/user_head"
+                      />
+
+               
+            </RelativeLayout>
+
+             
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" android:visibility="gone">
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:text="用户名" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@null"
+                    android:text="考生"
+                    android:textColor="@color/text_but" />
+
+                <ImageView style="@style/info_img" />
+            </RelativeLayout>
+
+           
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c8c8c8" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/updatepwd"
+                >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true" android:layout_marginLeft="25dp"
+                    android:textColor="#464646"
+                    android:text="密码设置"  android:textSize="18dp"/>
+
+                <ImageView style="@style/info_img" />
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateqa" 
+                android:visibility="gone"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:text="取回密码问题设置" />
+
+                <ImageView style="@style/info_img" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="25dp"
+                android:background="#c8c8c8" />
+        </LinearLayout>
+        
+        
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+          
+         
+            android:orientation="vertical" >
+
+           
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                   android:background="#fff"
+                >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#464646"
+                    android:text="手机号"  android:textSize="18dp"/>
+
+                 <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@null"
+                   android:textSize="18dp"
+                    android:id="@+id/phone"
+                    android:textColor="#c8c8c8" />
+
+               
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="25dp"
+             
+                android:background="#c8c8c8" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                 android:background="#fff" >
+
+                <TextView
+                    style="@style/information_text"
+                    android:layout_centerVertical="true"
+                     android:textColor="#464646"
+                      android:textSize="18dp"
+                      android:layout_marginLeft="25dp"
+                    android:text="邮箱地址" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@null"
+                    android:text="无"  
+                        android:id="@+id/email"
+                    android:textColor="#464646"
+                      android:textSize="18dp"
+                     />
+
+             
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c8c8c8" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp" >
+         
+        <Button   android:layout_width="fill_parent"
+        android:layout_height="50dp" android:background="#E44647"
+        android:text="退出登录" android:textColor="#fff"  android:layout_marginLeft="10dp"
+        android:id="@+id/logout" android:textSize="18dp"
+        android:layout_marginRight="10dp"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

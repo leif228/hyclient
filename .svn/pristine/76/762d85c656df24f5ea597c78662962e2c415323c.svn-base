@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <com.hangyi.zd.widge.CommonVideoView
+        android:id="@+id/common_videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/shipImgBig"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/common_videoView"
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        android:visibility="gone" >
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgBig1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/imgBig2"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgBig3"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/imgBig4"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/shipImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        android:visibility="gone" >
+              <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+    </LinearLayout>
+  <!--   <com.hangyi.zd.widge.DragLinearLayout
+        android:id="@+id/shipImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/shipName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/navitemlayout"
+            android:gravity="center_horizontal"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img13"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/img14"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img21"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/img22"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img23"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/img24"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+				<SurfaceView  
+					android:id="@+id/img31"
+					android:layout_width="100dp" 
+					android:layout_height="100dp"/>
+				<SurfaceView  
+					android:id="@+id/img32"
+					android:layout_width="100dp" 
+					android:layout_height="100dp"/>
+                <ImageView
+                    android:id="@+id/img31"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/img32"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"/> 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+				<SurfaceView  
+					android:id="@+id/img33"
+					android:layout_width="100dp" 
+					android:layout_height="100dp"
+					android:visibility="invisible"/>
+				<SurfaceView  
+					android:id="@+id/img34"
+					android:layout_width="100dp" 
+					android:layout_height="100dp"/>
+
+                <ImageView
+                    android:id="@+id/img33"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/img34"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/img4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img41"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/img42"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img43"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/img44"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_default"
+                    android:clickable="true"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.hangyi.zd.widge.DragLinearLayout> -->
+
+</RelativeLayout>

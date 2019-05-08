@@ -1,0 +1,157 @@
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+     
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bgColor"
+        android:orientation="vertical" >
+
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"  android:gravity="center_vertical"
+    android:background="#4D7DD2" >
+
+    <Button
+        android:id="@+id/top_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+       
+        android:layout_margin="10dp"
+        android:background="#4D7DD2"  
+        android:drawableLeft="@drawable/base_back"
+       android:textSize="18dp"
+       
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:text="找回密码"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="22dp" />
+
+
+    <Button
+         
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+          android:textColor="#fff"
+           android:id="@+id/top_commit" android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:minWidth="24dp"
+        android:background="@null"
+        />
+
+</LinearLayout>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/base_edittext"
+            android:hint="*手机号"
+            android:padding="3dp"
+            android:id="@+id/number"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/base_edittext"
+            android:hint="密码提示问题"
+            android:padding="3dp" android:visibility="gone"
+            android:id="@+id/question"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/base_edittext"
+            android:hint="密码提示答案"
+            android:padding="3dp"
+              android:id="@+id/answer"
+           android:visibility="gone"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                android:background="@drawable/base_edittext"
+                android:hint="*验证码"
+                android:padding="3dp" android:id="@+id/verification"
+                android:layout_marginRight="20dp"
+                android:textSize="18dp"  android:layout_weight="1"/>
+            
+            <Button    android:layout_width="fill_parent"    android:background="#ffF7F7F7"
+            android:textColor="@color/text_but" android:textSize="18px"  android:layout_weight="3"
+              android:layout_margin="3dp"
+              android:id="@+id/getvar_but"
+                android:layout_height="fill_parent" android:text="获取验证码"  />
+        </LinearLayout>
+         <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/base_edittext"
+            android:hint="*新密码"
+            android:padding="3dp" android:password="true"
+              android:id="@+id/newpwd"
+          
+            android:textSize="18dp" />
+         <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/base_edittext"
+            android:hint="*再次确认新密码"
+            android:padding="3dp" android:password="true"
+              android:id="@+id/repwd"
+           
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/blue"
+            android:padding="10dp"
+            android:text="确定"
+            android:id="@+id/submit"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+        
+        
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

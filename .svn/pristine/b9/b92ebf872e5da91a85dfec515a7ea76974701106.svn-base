@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/normal_top" />
+
+   
+
+    <include
+        android:id="@+id/adv_lay"
+        layout="@layout/normal_top_adv"
+        android:visibility="gone" />
+
+    <com.ygl.android.view.YFListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tool_bar"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="#ffaeb1b4"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="true"
+        android:padding="5dip"
+        android:paddingLeft="1dip"
+        android:paddingRight="1dip" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical" >
+<View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c8c8c8" />
+            <EditText
+                android:id="@+id/e3"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="25px"
+                android:background="@null"
+                android:hint="姓名"
+                android:padding="5px"
+                android:textSize="17dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c8c8c8" />
+
+            <EditText
+                android:id="@+id/e2"
+                  android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="25px"
+                android:background="@null"
+                android:padding="5px"
+                android:textSize="17dp" 
+                android:hint="身份证"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c8c8c8" />
+
+            <EditText
+                android:id="@+id/e1"
+                     android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="25px"
+                android:background="@null"
+                android:padding="5px"
+                android:textSize="17dp" 
+                android:hint="准考证"
+               />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c8c8c8" />
+
+            <EditText
+                android:id="@+id/e4"
+                   android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="25px"
+                android:background="@null"
+                android:padding="5px"
+                android:textSize="17dp" 
+                android:hint="报名号"
+                 />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c8c8c8" />
+
+          
+        </LinearLayout>
+          <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+              
+             >
+
+                <Button
+                    android:id="@+id/answer_but"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="17dp"
+                    android:background="#5b87d5"
+                    android:padding="10dp"
+                    android:text="绑定考生"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

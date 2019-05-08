@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="输入:船名、船东或MMSI"
+        android:layout_toRightOf="@+id/search_tag"
+        android:textColor="#000"
+        android:ems="12" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/search_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_search"
+        android:layout_alignBottom="@+id/et_search"
+        android:layout_alignParentLeft="true"
+        android:textColor="#000"
+        android:text="查找" />
+
+    
+
+    </RelativeLayout>
+
+</LinearLayout>

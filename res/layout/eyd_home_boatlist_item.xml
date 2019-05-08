@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/more"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c8c8c8" />
+
+        <TextView
+            android:id="@+id/include_title"
+            style="@style/home_top_text"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="推荐船舶" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:contentDescription="详情"
+            android:background="@drawable/home_arrow" />
+    </RelativeLayout>
+
+	<!-- 首页推荐船舶，最多20条 -->
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+    
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+
+    <include layout="@layout/eyd_home_one_item" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#c8c8c8" />
+
+</LinearLayout>

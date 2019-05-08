@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+    <include layout="@layout/normal_top" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      android:hint="事件名称"
+      android:id="@+id/title"
+        android:layout_margin="10dp"
+        android:gravity="top"
+        android:textColor="#424242"
+      
+        android:textSize="18dp" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="事件内容："
+        android:textColor="#424242"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minLines="5"
+        android:layout_margin="10dp"
+        android:gravity="top"
+          android:id="@+id/content"
+        android:textColor="#424242"
+      
+        android:textSize="18dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_margin="3dp"
+        android:background="#DEDDE2" />
+    <LinearLayout    android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center_vertical"    android:padding="10dp">
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="事件时间:"
+        android:textColor="#424242"
+        android:textSize="18dp" />
+       
+        <TextView
+            android:id="@+id/more_year"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+           android:layout_centerInParent="true"
+            android:background="@drawable/gkrl_text"
+            android:textColor="#4B7DD4"
+             
+         
+            android:textSize="22dp" />
+       
+       </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_margin="3dp"
+        android:background="#DEDDE2" />
+    
+  
+ <RelativeLayout  android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <LinearLayout  android:layout_width="fill_parent"
+            android:layout_height="wrap_content"   android:layout_alignParentBottom="true">
+          <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+           android:id="@+id/update"
+            android:background="@drawable/ksrl_but"
+            android:text="修改"
+            android:textColor="#fff" 
+            android:layout_weight="1"
+          
+            android:textSize="16dp" />
+             <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+           android:id="@+id/delete"   android:layout_weight="1"
+            android:background="@drawable/ksrl_but"
+            android:text="删除"
+            android:textColor="#fff" 
+            
+            android:layout_alignParentBottom="true"
+            android:textSize="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

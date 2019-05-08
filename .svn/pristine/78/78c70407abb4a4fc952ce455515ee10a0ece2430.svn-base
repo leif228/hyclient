@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+     >
+<include layout="@layout/normal_top"/>
+     
+
+ 
+      <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+         
+            android:background="#DFDFDF" />
+       <include layout="@layout/normal_top_adv" android:id="@+id/adv_lay" android:visibility="gone"/>
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#464646" 
+        android:padding="5dp"
+       
+        android:id="@+id/title"
+        android:textSize="20dp" />
+      <com.ygl.android.view.YFListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tool_bar"
+        android:padding="5dip"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="#ffaeb1b4"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="true"
+        android:paddingLeft="1dip"
+        android:background="#F7F7F7"
+        android:paddingRight="1dip" />
+      
+
+</LinearLayout>

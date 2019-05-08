@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homePage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/commen_ship_top" />
+
+    <ExpandableListView
+        android:id="@+id/operator_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="#ffaeb1b4"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="true"
+        android:paddingLeft="1dip"
+        android:paddingRight="1dip" >
+<!--         android:background="#fff" -->
+
+    </ExpandableListView>
+
+</LinearLayout>

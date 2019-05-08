@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tabBtns"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/tab01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="找货"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/darkgrey" />
+
+        <TextView
+            android:id="@+id/tab02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="货类"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/darkgrey" />
+
+        <TextView
+            android:id="@+id/tab03"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="地区"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/darkgrey" />
+
+        <TextView
+            android:id="@+id/tab04"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="货代"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="#CFCFCF" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <com.eyunda.third.activities.ship.widget.MyListView
+            android:id="@+id/findCargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </com.eyunda.third.activities.ship.widget.MyListView>
+    </FrameLayout>
+
+</LinearLayout>

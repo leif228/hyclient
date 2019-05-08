@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <attr name="auto_play" forMymat="boolean" />
+
+    <declare-styleable name="SlidingSwitcherView">
+        <attr name="auto_play" />
+    </declare-styleable>
+    <declare-styleable name="BootstrapButton">
+        <attr name="bb_type" format="string"/>
+        <attr name="bb_icon_left" format="string"/>
+        <attr name="bb_icon_right" format="string"/>
+        <attr name="bb_roundedCorners" format="boolean"/>
+        <attr name="bb_text_alignment" format="string"/>
+        <attr name="bb_size" format="string"/>
+        <attr name="bb_text_gravity" format="string"/>
+        <attr name="android:textSize"/>
+        <attr name="android:text"/>
+        <attr name="android:enabled"/>
+		<attr name="android:layout_width"/>
+        <attr name="android:layout_weight"/>
+    </declare-styleable>
+    
+     <declare-styleable name="FontAwesomeText">
+        <attr name="fa_icon" format="string"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+      </declare-styleable>
+      
+     <declare-styleable name="BootstrapEditText">
+        <attr name="be_roundedCorners" format="boolean"/>
+        <attr name="be_state" format="string"/>
+        <attr name="android:textSize"/>
+        <attr name="android:text"/>
+        <attr name="android:hint"/>
+        <attr name="android:enabled"/>
+    </declare-styleable>
+    
+     <declare-styleable name="BootstrapThumbnail"> 
+         <attr name="bt_roundedCorners" format="boolean"/>
+         <attr name="bt_image" format="integer"/>
+         <attr name="bt_width" format="dimension"/>
+         <attr name="bt_height" format="dimension"/>
+         <attr name="bt_inside_padding" format="dimension"/>
+         <attr name="android:text"/>
+     </declare-styleable>
+
+    <declare-styleable name="BootstrapCircleThumbnail">
+        <attr name="bct_image" format="integer"/>
+        <attr name="bct_size" format="string" />
+        <attr name="bct_minimal" format="boolean" />
+        <attr name="android:text"/>
+    </declare-styleable>
+    
+    
+    <declare-styleable name="gridPasswordView">
+
+        <attr name="gpvTextColor" format="color|reference" />
+        <attr name="gpvTextSize" format="dimension" />
+
+        <attr name="gpvLineColor" format="color" />
+        <attr name="gpvGridColor" format="color" />
+        <attr name="gpvLineWidth" format="dimension" />
+
+        <attr name="gpvPasswordLength" format="integer" />
+        <attr name="gpvPasswordTransformation" format="string" />
+
+        <attr name="gpvPasswordType" format="enum">
+            <enum name="numberPassword" value="0" />
+            <enum name="textPassword" value="1" />
+            <enum name="textVisiblePassword" value="2" />
+            <enum name="textWebPassword" value="3" />
+        </attr>
+
+    </declare-styleable>
+    
+    <declare-styleable name="JDAdverView">
+        <attr name="gap" format="integer" />
+        <attr name="animDuration" format="integer"/>
+    </declare-styleable>
+    
+    <!--项目中用到的合法域名-->
+    <string-array name="legal_domain">
+        <item>hx-oil</item>
+        <item>baidu</item>
+        <item>bdimg</item>
+    </string-array>
+
+</resources>

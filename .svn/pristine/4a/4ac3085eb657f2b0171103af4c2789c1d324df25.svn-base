@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+	<!-- 查找船舶 -->
+    <include
+        android:id="@+id/head"
+        layout="@layout/normal_top" />
+
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:background="@color/bgColor"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#DFDFDF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/bgColor"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal" 
+            android:id="@+id/autoCompleteContain">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteCC"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="输入船舶名称或部分进行模糊查询"
+                android:textColor="#000000" >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+        </LinearLayout>
+
+
+        <!-- 船舶信息 -->
+		<include
+            android:id="@+id/userInfo"
+            layout="@layout/eyd_order_findcc_information" />
+
+    </LinearLayout>
+
+</RelativeLayout>

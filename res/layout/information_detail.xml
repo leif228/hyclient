@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/normal_top" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#464646" 
+        android:padding="5dp"
+       
+        android:id="@+id/title"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#c8c8c8"
+           android:padding="5dp"    
+          android:id="@+id/time"
+        android:textSize="14dp" />
+
+    <WebView
+        android:id="@+id/wv1"    
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+         android:textSize="17dp" 
+        android:scrollbars="none" />
+
+</LinearLayout>

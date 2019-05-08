@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff393939" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/menuList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#272727"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:paddingRight="80dp" >
+
+                <LinearLayout
+                    android:id="@+id/scroll_but_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/userHead"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/login_nologin" 
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/login_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:text="@string/app_login_register"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/login_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="登录后，推荐更多精彩"
+                        android:textColor="#B8B8B8"
+                        android:textSize="17sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c8c8c8" />
+
+            <!-- 船舶搜索 -->
+
+            <LinearLayout
+                android:id="@+id/home_left_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/ic_action_search"
+                        android:contentDescription="@string/my_message" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/search_boat" />
+                    <!-- 显示消息数目 -->
+
+                    <TextView
+                        android:id="@+id/favor_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#ffF8A68E"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="0"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/searchpoint"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/my_message"
+                        android:padding="3dp"
+                        android:src="@drawable/ksrl_main_point"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+
+            <!-- 我的船舶 -->
+
+            <LinearLayout
+                android:id="@+id/home_left_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/boatagent"
+                        android:contentDescription="@string/my_boat" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/my_boat" />
+
+                    <ImageView
+                        android:id="@+id/home_test_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ksrl_main_point"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_left_ship"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:clickable="true" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/chechuan"
+                        android:contentDescription="@string/my_boat_dt" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/my_boat_dt" />
+
+                    <ImageView
+                        android:id="@+id/home_test_point2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ksrl_main_point"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_left_history"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:clickable="true" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/boatmoniter"
+                        android:contentDescription="@string/my_boat_jk" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/my_boat_jk" />
+
+                    <ImageView
+                        android:id="@+id/home_test_point_jk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ksrl_main_point"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+            <!-- 货运 -->
+
+            <LinearLayout
+                android:id="@+id/home_left_hcmanage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:clickable="true" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/login_img3"
+                        android:contentDescription="@string/my_cargo" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/my_cargo" />
+
+                    <ImageView
+                        android:id="@+id/home_ship_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ksrl_main_point"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+            <!-- 我的合同 -->
+
+            <LinearLayout
+                android:id="@+id/home_left_jt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:clickable="true" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/login_img4"
+                        android:contentDescription="@string/my_order" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/my_order" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+            <!--船舶上报 -->
+            <LinearLayout
+                android:id="@+id/home_left_carbin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/chechuan"
+                        android:contentDescription="@string/my_cabin" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/my_cabin" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+            <!-- 我的账单 -->
+
+            <LinearLayout
+                android:id="@+id/home_left_lay3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/login_img3"
+                        android:contentDescription="@string/my_settle" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/my_settle" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/home_left_lay4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/login_img3"
+                        android:contentDescription="@string/my_settle" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/my_settle" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+            <!-- 我的消息 -->
+
+            <LinearLayout
+                android:id="@+id/home_left_lay1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/mymessage"
+                        android:contentDescription="@string/my_message" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/my_message" />
+
+                    <ImageView
+                        android:id="@+id/showpoint"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/my_message"
+                        android:padding="3dp"
+                        android:src="@drawable/ksrl_main_point"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+
+            <!-- 我的联系人 -->
+
+            <LinearLayout
+                android:id="@+id/home_left_lay2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/lianxiren"
+                        android:contentDescription="@string/my_phonebook" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/my_phonebook" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+
+            <!-- 系统设置 -->
+
+            <LinearLayout
+                android:id="@+id/home_left_lay5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/login_img5"
+                        android:contentDescription="@string/app_sys_set" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/app_sys_set" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_left_lay6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/login_img6"
+                        android:contentDescription="@string/app_exit" />
+
+                    <TextView
+                        style="@style/login_text"
+                        android:text="@string/app_exit" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.eyunda.main.view.MenuHorizontalScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00ffffff"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00ffffff"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.eyunda.main.view.MenuHorizontalScrollView>
+
+</FrameLayout>

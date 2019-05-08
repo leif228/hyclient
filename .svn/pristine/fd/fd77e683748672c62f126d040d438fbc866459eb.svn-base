@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:background="#E9E9E9"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/normal_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/head"  android:orientation="vertical">
+        
+       <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fadingEdge="@null"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+            </RadioGroup>
+        </RelativeLayout>
+    </HorizontalScrollView>
+      <View    android:layout_width="fill_parent"
+            android:layout_height="1px" android:background="#c8c8c8"/>   
+  <include layout="@layout/normal_top_adv"  android:id="@+id/adv_lay" android:visibility="gone" />"
+        <com.ygl.android.view.YFListView
+            android:id="@+id/listview" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#ffc8c8c8"
+            android:dividerHeight="1px"
+            android:fastScrollEnabled="true"
+           
+            android:paddingLeft="1dip"
+            android:paddingRight="1dip" />
+    </LinearLayout>
+
+</RelativeLayout>

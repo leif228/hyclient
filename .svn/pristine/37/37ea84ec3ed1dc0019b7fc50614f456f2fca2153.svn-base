@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/normal_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c8c8c8" />
+
+        <RelativeLayout
+            android:id="@+id/port"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/eyd_chat_mm_listitem"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_nike"
+                style="@style/information_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text=" 码头"
+                android:textColor="#464646"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/home_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/kh"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/eyd_chat_mm_listitem"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/information_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text=" 客户"
+                android:textColor="#464646"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/home_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c8c8c8" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/cd"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/eyd_chat_mm_listitem"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/information_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text=" 船队"
+                android:textColor="#464646"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/home_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c8c8c8" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/all"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/eyd_chat_mm_listitem"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/information_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text=" 所有"
+                android:textColor="#464646"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/home_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c8c8c8" />
+    </LinearLayout>
+
+</LinearLayout>

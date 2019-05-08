@@ -1,0 +1,602 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/bgColor"
+                android:orientation="vertical" >
+
+                <include layout="@layout/normal_top" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/user_head"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/login_login" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:text="用户名" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="40dp"
+                            android:background="@null"
+                            android:text="考生"
+                            android:textColor="@color/text_but" />
+
+                        <ImageView style="@style/info_img" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#464646" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="船舶卫星定位"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#fff"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/dw1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="经度："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/dw2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="纬度："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/dw3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="航速："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/dw4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="航向："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/dw5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="卫星时间："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#464646" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:orientation="vertical" 
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#464646" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="设备信息"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#fff"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/sb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="主电源电压："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/sb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="备电源电压："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/sb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="设备温度："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/sb4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="充电状态："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#464646" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#464646" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="装载数据"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#fff"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/zz1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="当前状态："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/zz2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="起运港："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/zz3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="到达港："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/zz4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="装载量："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#464646" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#464646" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="船舶资料"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#fff"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/gk1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="船长："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/gk2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="船宽："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/gk3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="型深："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/gk4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="A级载重："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/gk5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="B级载重："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/gk6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="驾驶方式："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/gk7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="船型："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/gk8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="船舶所属公司："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/gk9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="联系人："
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/gk10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="电话："
+                            android:textColor="#DC143C"
+                            android:clickable="true"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#464646" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="#fff" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="手机号"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="无"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="25dp"
+                        android:background="#464646" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="#fff" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="邮箱地址"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:text="无"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="25dp"
+                        android:background="#464646" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="#fff" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="在线状态"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <Spinner
+                            android:id="@+id/online_states"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@null"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#464646" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#E44647"
+                    android:text="退出登录"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

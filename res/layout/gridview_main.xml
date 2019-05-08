@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/normal_top" />
+
+    <RelativeLayout
+        android:id="@+id/myView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.hangyi.zd.activity.gridviewpage.ScrollLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollLayoutTest"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/bgColor" >
+        </com.hangyi.zd.activity.gridviewpage.ScrollLayout>
+
+        <com.hangyi.zd.activity.gridviewpage.PageControlView
+            android:id="@+id/pageControl"
+            android:layout_width="fill_parent"
+            android:layout_height="40px"
+            android:layout_alignParentBottom="true"
+            android:background="#8f00000f"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</LinearLayout>

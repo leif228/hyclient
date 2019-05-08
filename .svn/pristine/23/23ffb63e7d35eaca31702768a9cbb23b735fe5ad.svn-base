@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/normal_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/account_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shipName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/startMonth"
+                android:layout_alignBaseline="@+id/shipName"
+                android:text="船名：" />
+
+            <TextView
+                android:id="@+id/shipName"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/shipName_tv"
+                android:gravity="center"
+                android:text="ff" />
+
+            <TextView
+                android:id="@+id/taoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/startMonth"
+                android:layout_below="@+id/shipName"
+                 android:layout_alignBaseline="@+id/spinner_account_way"
+                android:text="套餐：" />
+
+            <Spinner
+                android:id="@+id/spinner_account_way"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/taoc"
+                android:layout_below="@+id/shipName"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/startMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_account_way"
+                android:layout_alignBaseline="@+id/et_start"
+                android:text="开始年月：" />
+
+            <TextView
+                android:id="@+id/et_start"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/startMonth"
+                 android:gravity="center"
+                 android:layout_below="@+id/spinner_account_way"
+                 android:layout_marginTop="2dp"
+                android:background="@drawable/info_item4_serch_normal_but"
+                android:textColor="#000" 
+                android:text="2015-12"/>
+            <TextView
+                android:id="@+id/endMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_start"
+                android:layout_alignRight="@+id/startMonth"
+                android:layout_alignBaseline="@+id/et_end"
+                android:text="结束年月：" />
+
+            <TextView
+                android:id="@+id/et_end"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/endMonth"
+                 android:layout_below="@+id/et_start"
+                 android:gravity="center"
+                 android:layout_marginTop="2dp"
+                android:text="2016-12"
+                android:enabled="false"/>
+            <TextView
+                android:id="@+id/mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_end"
+                android:layout_alignRight="@+id/startMonth"
+                android:layout_alignBaseline="@+id/money"
+                android:text="金额(元)：" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/mon"
+                 android:layout_below="@+id/et_end"
+                 android:layout_marginTop="2dp"
+                 android:gravity="center"
+                android:text="100"
+                android:enabled="false"/>
+            <TextView
+                android:id="@+id/r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/money"
+                android:layout_alignRight="@+id/startMonth"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/sm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/r"
+                android:layout_marginTop="10dp"
+                 android:layout_below="@+id/money"
+                android:text="说明：一年套餐为：960元，半年套餐为：510元，一季度套餐为：270元，一个月套餐为：100元。"/>
+
+          
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_in"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/account_submit"
+                android:layout_width="70dip"
+                android:layout_height="35dip"
+                android:background="@drawable/eyd_user_login_button_back"
+                android:text="提交"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/account_back"
+                android:layout_width="70dip"
+                android:layout_height="35dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/account_submit"
+                android:background="@drawable/eyd_user_login_button_back"
+                android:text="返回"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

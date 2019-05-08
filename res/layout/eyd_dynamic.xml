@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    
+    <include
+        android:id="@+id/head"
+        layout="@layout/normal_top" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/arrive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已到港"
+            android:textSize="18sp"
+            android:textColor="#000" />       
+
+        <TextView
+            android:id="@+id/ship_dt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2015-8-4到广州黄埔港"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000" />       
+     
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="5dp" 
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/ship_dt_cargo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="卸货"
+            android:textColor="#000"
+            android:textSize="16sp" />
+     
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ltp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dt_cargoType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+             android:textSize="16sp"
+            android:text="集装箱.20尺柜"
+            android:textColor="#000" />
+        
+        <TextView
+            android:id="@+id/dt_cargoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="空箱"
+            android:textSize="16sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/dt_Num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="20个"
+            android:textSize="16sp"
+            android:textColor="#000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/unitPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+             android:textSize="16sp"
+            android:text="20元/吨"
+            android:textColor="#000" />
+        
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="4000元"
+            android:textSize="16sp"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ship_dt_bz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:textSize="16sp"
+            android:text="备注:范德萨范德萨"
+            android:textColor="#000" />
+    </LinearLayout>
+
+</LinearLayout>

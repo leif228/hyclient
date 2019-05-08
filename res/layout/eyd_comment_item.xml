@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" > 
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+    <ImageView 
+        android:id="@+id/info_img"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/zd_icon"/>
+
+     <TextView
+         android:id="@+id/user_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/info_img"
+         android:layout_toRightOf="@+id/info_img"
+         android:text="航运998" />
+
+     <TextView
+         android:id="@+id/info_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/info_name"
+         android:layout_alignBottom="@+id/info_name"
+         android:layout_alignParentRight="true"
+         android:text="2014/11/5" />
+
+     <TextView
+         android:id="@+id/info_comment"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/user_name"
+         android:layout_below="@+id/info_img"
+         android:text="广州---香港（7天）25元/天"
+         android:textColor="#000" />
+
+ </RelativeLayout>
+</RelativeLayout>

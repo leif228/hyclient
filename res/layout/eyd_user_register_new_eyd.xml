@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/normal_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar" >
+             <TextView
+            android:id="@+id/protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text=""
+            android:inputType="textMultiLine" >
+
+        </TextView>
+
+           
+
+         </RelativeLayout>   
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/basic"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/basic_submit"
+                android:layout_width="70dip"
+                android:layout_height="35dip"
+                android:background="@drawable/eyd_user_login_button_back"
+                android:text="返回"
+                android:textColor="@android:color/white" />
+
+          <!--   <Button
+                android:id="@+id/basic_back"
+                android:layout_width="70dip"
+                android:layout_height="35dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/basic_submit"
+                android:background="@drawable/eyd_user_login_button_back"
+                android:text="返回"
+                android:textColor="@android:color/white" /> -->
+        </RelativeLayout>
+
+       
+
+    </RelativeLayout>
+
+</ScrollView>

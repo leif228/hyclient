@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <!-- 合同条款 -->
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/normal_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingBottom="60dp" >
+          <RelativeLayout
+                android:id="@+id/firstAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_oil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="合同模板" />
+
+                <Spinner
+                    android:id="@+id/orderTemplateSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv_oil" />
+
+            </RelativeLayout>
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/orderTempList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F7F7F7"
+                    android:cacheColorHint="#00000000"
+                    android:descendantFocusability="blocksDescendants"
+                    android:divider="#ffaeb1b4"
+                    android:dividerHeight="1px"
+                    android:fastScrollEnabled="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp" >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_margin="10dp">
+         <Button
+	            android:id="@+id/btnDelAll"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:layout_weight="1"
+	            android:background="#E44647"
+	            android:text="全部删除"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:textColor="#fff"
+	            android:textSize="18dp" />
+			<Button
+	            android:id="@+id/btnSave"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:background="#E44647"
+	            android:text="新增条款"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+                android:layout_weight="1"
+	            android:textColor="#fff"
+	            android:textSize="18dp" />
+	
+		</LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

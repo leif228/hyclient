@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homePage"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+                android:background="#F7F7F7" >
+
+    <!-- 查找结果 -->
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/normal_top" />
+
+    <LinearLayout
+        android:id="@+id/searchTabScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head" >
+        
+        <ExpandableListView
+                android:id="@+id/operator_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="#ffaeb1b4"
+                android:dividerHeight="1px"
+                android:fastScrollEnabled="true"
+                android:paddingLeft="1dip"
+                android:paddingRight="1dip" />
+	</LinearLayout>
+</RelativeLayout>

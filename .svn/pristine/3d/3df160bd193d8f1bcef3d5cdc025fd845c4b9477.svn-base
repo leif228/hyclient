@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#4779d8"
+  >
+    
+   
+
+    <Button
+        android:id="@+id/top_back"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/base_back"
+        android:textColor="#fff"    
+        android:layout_centerVertical="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+         android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp" >
+
+        <TextView
+            android:id="@+id/top_commit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:textColor="@drawable/xml_back_textcolor"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/top_commit"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@null"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

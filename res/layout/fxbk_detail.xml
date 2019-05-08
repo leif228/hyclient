@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="50dp"  android:gravity="center_vertical"
+    android:background="#4D7DD2" >
+
+    <Button
+        android:id="@+id/top_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+       
+        android:layout_marginLeft="10dp"
+        android:background="#4D7DD2"  
+        android:drawableLeft="@drawable/base_back"
+       android:textSize="18dp"
+       
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:text=" "
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="22dp" />
+
+
+    <Button
+         
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+          android:textColor="#fff"
+           android:id="@+id/top_commit" android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:minWidth="24dp"
+          android:layout_centerInParent="true"
+        android:background="@null"
+        />
+    <com.eyunda.part1.view.SwitchStudyLay
+            android:id="@+id/myswitch"  android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"  android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"  android:layout_centerVertical="true"/>
+
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000" 
+        android:padding="5dp"
+        android:background="#fff"
+        android:id="@+id/title"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#333"
+           android:padding="5dp"   android:background="#fff"
+          android:id="@+id/time"
+        android:textSize="12dp" />
+
+    <WebView
+        android:id="@+id/wv1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:scrollbars="none" />
+
+</LinearLayout>

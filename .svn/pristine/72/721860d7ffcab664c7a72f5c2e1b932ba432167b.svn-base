@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/normal_top" />
+
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        android:background="@color/bgColor"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="17dp"
+            android:singleLine="true"
+            android:text="插件说明"
+            android:textColor="#464646"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/plug_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10px"
+            android:textColor="#c8c8c8"
+            android:textSize="17dp" />
+
+        <RelativeLayout
+            android:id="@+id/push_item"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:orientation="vertical" >
+
+         
+
+            <EditText
+                android:id="@+id/lab_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                android:gravity="top"
+              
+               
+                android:hint="意见反馈"
+                 android:minLines="5"
+                android:textColor="#464646"
+                android:padding="5dp"
+                android:textSize="18dp" />
+            
+              <Button   android:layout_width="80dp"
+                  android:layout_below="@+id/lab_name"
+                android:layout_alignParentRight="true"
+                 android:textColor="#464646"
+            android:id="@+id/submit_but"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"  android:text="发送"/>
+            
+        </RelativeLayout>
+            
+    </LinearLayout>
+
+</RelativeLayout>

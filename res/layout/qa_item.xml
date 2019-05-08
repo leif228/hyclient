@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   
+    android:gravity="center_vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="8dp" android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/qa_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 
+                android:textColor="#464646"
+                android:textSize="18dp" />
+            <TextView
+                    android:id="@+id/qa_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:textColor="#274FC2"
+                    android:visibility="gone"
+                    android:textSize="18dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/qa_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+          android:maxLines="2"    
+            android:textColor="#c8c8c8"
+            android:textSize="17dp" />
+    </LinearLayout>
+ <TextView
+            android:id="@+id/qa_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:singleLine="true"     android:text="kkkk"
+            android:textColor="@color/text_but"
+            android:visibility="gone"
+            android:textSize="12dp" />
+</LinearLayout>

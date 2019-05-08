@@ -1,0 +1,56 @@
+Android中Activity共享变量的另一方法：Application context
+
+最近做局域网socket连接问题，要在多个activity之间公用一个socket连接，就在网上搜了下资料，感觉还是application方法好用，帖出来分享下！
+Android中在不同Activity中传递变量，通常使用Intent中Bundle添加变量的操作方法。
+
+保存参数时：
+	
+Intent intent = new Intent();       
+intent.setClass(A.this, B.class);       
+Bundle bundle = new Bundle();       
+bundle.putString("name", "xiaozhu");       
+intent.putExtras(bundle);       
+startActivity(intent);
+
+读取参数：
+	
+Intent intent = this.getIntent();           
+Bundle bundle = intent.getExtras();             
+String name = bundle.getString("name");    
+[java] view plaincopy 
+Intent intent = this.getIntent();          
+Bundle bundle = intent.getExtras();            
+String name = bundle.getString("name");
+
+不过在多个Activity中经常使用同一变量时，使用Bundle则比较麻烦，每次调用Activity都需要设置一次。
+
+如想在整个应用中使用，在java中一般是使用静态变量，而在android中有个更优雅的方式是使用Application context。
+
+新建一个类，继承自Application
+	
+class MyApp extends Application {       
+    private String myState;       
+    public String getState() {       
+    return myState;       
+    }       
+    public void setState(String s) {       
+    myState = s;       
+    }       
+}    
+
+在AndroidManifest.xml的application加个name属性就可以了，如下面所示：
+
+<application android:name=".MyApp" android:icon="@drawable/icon" android:label="@string/app_name">
+
+使用时：
+	
+class Blah extends Activity {       
+  @Override      
+  public void onCreate(Bundle b){       
+    ...       
+    MyApp appState = ((MyApp)getApplicationContext());       
+    String state = appState.getState();       
+    ...       
+  }       
+}
+

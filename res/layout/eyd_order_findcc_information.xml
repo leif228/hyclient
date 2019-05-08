@@ -1,0 +1,314 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/bgColor"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp" >
+
+                        <ImageView
+                            android:id="@+id/user_head"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ship" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:text="用户名" />
+
+                        <ImageView style="@style/info_img" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="25dp"
+                        android:background="#c8c8c8" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="#fff" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="船名"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/shipName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="40dp"
+                            android:background="@null"
+                            android:text="航讯8302"
+                            android:textColor="#c8c8c8"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="25dp"
+                        android:background="#c8c8c8" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="#fff" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="MMSI"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/shipMMSI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="40dp"
+                            android:background="@null"
+                            android:text="航讯8302"
+                            android:textColor="#c8c8c8"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="25dp"
+                        android:background="#c8c8c8" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="#fff" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="船东"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/carrierName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="40dp"
+                            android:background="@null"
+                            android:text="测试船主"
+                            android:textColor="#c8c8c8"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#c8c8c8" />
+
+                    <RelativeLayout
+                        android:id="@+id/userLoginNameFlag"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="#ffffff" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="类别"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/shipCate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="40dp"
+                            android:background="@null"
+                            android:text="邮轮"
+                            android:textColor="#c8c8c8"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="25dp"
+                        android:background="#c8c8c8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="#fff" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="总吨"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/shipTon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="40dp"
+                            android:background="@null"
+                            android:text="2000吨"
+                            android:textColor="#c8c8c8"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+                    
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="25dp"
+                        android:background="#c8c8c8" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="#fff" >
+
+                        <TextView
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="航次"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/phoneNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="40dp"
+                            android:background="@null"
+                            android:text=""
+                            android:textColor="#c8c8c8"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="25dp"
+                        android:background="#c8c8c8" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="#fff" >
+
+                        <TextView
+                            android:id="@+id/boatAdFlag"
+                            style="@style/information_text"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="动态"
+                            android:textColor="#464646"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/shipKeywords"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@id/boatAdFlag"
+                            android:text="动态"
+                            android:textColor="#c8c8c8"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="5dp" 
+        android:id="@+id/btnSaveContain">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E44647"
+            android:text="保存结果"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

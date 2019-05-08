@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item
+        android:id="@+id/delete_contact"
+        android:title="解除绑定"/>
+     <item
+        android:id="@+id/set_rcv"
+        android:title="设置为收款账户"/>
+   
+
+</menu>

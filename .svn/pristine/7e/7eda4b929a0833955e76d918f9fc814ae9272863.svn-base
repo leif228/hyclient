@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/normal_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar" >
+
+            <EditText
+                android:id="@+id/true_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@+id/login_name"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/basic_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@+id/nick_name"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/textView4"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/pingan_accountNo"
+                android:layout_alignBottom="@+id/pingan_accountNo"
+                android:layout_toLeftOf="@+id/pingan_accountNo"
+                android:text="钱包账号：" />
+
+            <TextView
+                android:id="@+id/pingan_accountNo"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:gravity="center_vertical"
+                android:text="1212" />
+
+            <TextView
+                android:id="@+id/textView_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/radioGroup"
+                android:layout_alignBottom="@+id/radioGroup"
+                android:layout_toLeftOf="@+id/radioGroup"
+                android:text="用户类型：" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/pingan_accountNo"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5px"
+                    android:checked="true"
+                    android:text="个人帐户 " />
+
+                <RadioButton
+                    android:id="@+id/enterprise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5px"
+                    android:text="企业帐户 " />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/login_name"
+                android:layout_alignBottom="@+id/login_name"
+                android:layout_toLeftOf="@+id/login_name"
+                android:text="登入名：" />
+
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@+id/radioGroup"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" >
+
+                <!-- <requestFocus /> -->
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/true_name"
+                android:layout_alignBottom="@+id/true_name"
+                android:layout_alignParentLeft="true"
+                android:text="真实姓名：" />
+
+            <EditText
+                android:id="@+id/nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_alignLeft="@+id/true_name"
+                android:layout_below="@+id/true_name"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nick_name"
+                android:layout_alignBottom="@+id/nick_name"
+                android:layout_toLeftOf="@+id/nick_name"
+                android:text="昵称：" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/basic_email"
+                android:layout_alignBottom="@+id/basic_email"
+                android:layout_toLeftOf="@+id/nick_name"
+                android:text="电子邮箱：" />
+
+            <LinearLayout
+                android:id="@+id/bp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/basic_email"
+                android:layout_below="@+id/basic_email"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/basic_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dip"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:enabled="false"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/syncMobil_btn"
+                        android:layout_width="80dip"
+                        android:layout_height="35dip"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:background="@drawable/eyd_user_login_button_back"
+                        android:text="同步"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/messageCode_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/messageCode"
+                        android:layout_width="0dp"
+                        android:layout_height="40dip"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="输入短信验证码"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/mobile4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机后四位" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/basic_email"
+                android:layout_toLeftOf="@+id/bp"
+                android:text="手机：" />
+
+            <RelativeLayout
+                android:id="@+id/notc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bp" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/basic_unitCode"
+                    android:layout_alignParentLeft="true"
+                    android:text="公司名称：" />
+
+                <EditText
+                    android:id="@+id/basic_unitCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:ems="100"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/basic_unitCode"
+                    android:layout_toLeftOf="@+id/sp"
+                    android:text="所在地：" />
+
+                <LinearLayout
+                    android:id="@+id/sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/basic_unitCode"
+                    android:layout_below="@+id/basic_unitCode"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Spinner
+                            android:id="@+id/p"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/c"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/a"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/address"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="请输入公司详细地址"
+                            android:inputType="textMultiLine" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sp"
+                    android:layout_toLeftOf="@+id/basic_roles"
+                    android:text="选择角色："
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/basic_roles"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/basic_unitCode"
+                    android:layout_below="@+id/sp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb_cd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:text="托运人" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cdon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:text="承运人" />
+                    </LinearLayout>
+
+                    <!--
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cb_hd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="货代" />
+
+                    <CheckBox
+                        android:id="@+id/cb_cdon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="船东" /> 
+                </LinearLayout>
+                    -->
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/basic"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/select_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="个性签名：" />
+
+                <ImageView
+                    android:id="@+id/name_img"
+                    android:layout_width="135dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/info_item4_serch_normal_but"
+                    android:clickable="true"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear2"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/select_seal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="选择图章：" />
+                <!-- android:background="@drawable/btn_light_blue" -->
+
+                <ImageView
+                    android:id="@+id/seal_img"
+                    android:layout_width="135dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/info_item4_serch_normal_but"
+                    android:clickable="true"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/select_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="选择头像：" />
+
+                <ImageView
+                    android:id="@+id/head_img"
+                    android:layout_width="135dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/info_item4_serch_normal_but"
+                    android:clickable="true"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/basic_submit"
+                android:layout_width="70dip"
+                android:layout_height="35dip"
+                android:background="@drawable/eyd_user_login_button_back"
+                android:text="提交"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/basic_back"
+                android:layout_width="70dip"
+                android:layout_height="35dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/basic_submit"
+                android:background="@drawable/eyd_user_login_button_back"
+                android:text="返回"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

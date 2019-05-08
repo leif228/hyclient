@@ -1,0 +1,75 @@
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+     
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bgColor"
+        android:orientation="vertical" >
+
+         <include layout="@layout/normal_top"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#BDBEC2" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/base_edittext"
+            android:hint="输入密码"
+            android:padding="3dp"
+            android:password="true"
+            android:id="@+id/pwd1"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/base_edittext"
+            android:hint="新密码" android:password="true"
+            android:padding="3dp"
+              android:id="@+id/pwd2"
+           
+            android:textSize="18dp" />
+         <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/base_edittext"
+            android:hint="确认新密码" android:password="true"
+            android:padding="3dp"
+              android:id="@+id/pwd3"
+           
+            android:textSize="18dp" />
+         
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#4D7DD2"
+            android:padding="10dp"
+            android:text="确定"
+            android:id="@+id/submit"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="liuxin.lushu.MainActivity" >
+	
+ 	<com.baidu.mapapi.map.MapView  
+    android:id="@+id/mapHistory"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/shipPic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="船舶监控" 
+            android:visibility="visible"
+            />
+
+</RelativeLayout>

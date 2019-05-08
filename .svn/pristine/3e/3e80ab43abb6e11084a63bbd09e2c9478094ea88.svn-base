@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" > 
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+		android:padding="5dp"
+        >
+
+    <TextView 
+        android:id="@+id/orderTempName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#000"
+        android:text="航次合同001"/>
+
+     <TextView
+         android:id="@+id/orderTempId"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginRight="48dp"
+         android:visibility="gone"/>
+
+     <TextView
+         android:id="@+id/orderTempUse"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/orderTempName"
+         android:text="合同说明：适用于航次"
+         android:visibility="gone" />
+
+ </RelativeLayout>
+</RelativeLayout>

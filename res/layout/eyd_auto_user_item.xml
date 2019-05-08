@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/userName"
+	    style="?android:attr/dropDownItemStyle"
+	    android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+	    android:singleLine="true"
+	    android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_width="fill_parent"
+        android:ellipsize="marquee"
+        />
+</LinearLayout>

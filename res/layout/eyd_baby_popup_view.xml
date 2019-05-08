@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 弹出菜单布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+        <Button
+            android:id="@+id/menu_account"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#3B79C4"
+            android:padding="10dp"
+            android:text="充值扣费"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+        
+       <!--  <Button
+            android:id="@+id/menu_apply_agent"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#3B79C4"
+            android:padding="10dp"
+            android:text="申请为船代"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+         <Button
+            android:id="@+id/menu_apply_agent_cargo"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#3B79C4"
+            android:padding="10dp"
+            android:text="申请为货代"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+        <Button
+            android:id="@+id/menu_update_pwd"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#3B79C4"
+            android:padding="10dp"
+            android:text="修改密码"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000" />
+        <Button
+            android:id="@+id/menu_userchild"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#3B79C4"
+            android:padding="10dp"
+            android:text="子账号管理"
+            android:textColor="#fff"
+            android:textSize="18dp" /> -->
+      
+</LinearLayout>
